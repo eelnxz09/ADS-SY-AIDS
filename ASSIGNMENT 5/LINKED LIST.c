@@ -249,48 +249,6 @@ void display() {
     printf("NULL\n");
 }
 
-void reverse() {
-    if (head == NULL) {
-        printf("List is empty! Cannot reverse.\n");
-        return;
-    }
-
-    struct Node* prev = NULL;
-    struct Node* current = head;
-    struct Node* next;
-
-    while (current != NULL) {
-        next = current->next;
-        current->next = prev;
-        prev = current;
-        current = next;
-    }
-
-    head = prev;
-    printf("List reversed successfully.\n");
-}
-
-void search() {
-    if (head == NULL) {
-        printf("List is empty!\n");
-        return;
-    }
-
-    int value;
-    printf("Enter value to search: ");
-    scanf("%d", &value);
-
-    struct Node* temp = head;
-    int pos = 1;
-
-    while (temp != NULL) {
-        if (temp->data == value) {
-            printf("Value %d found at position %d.\n", value, pos);
-            return;
-        }
-        temp = temp->next;
-        pos++;
-    }
 
     printf("Value %d not found in the list.\n", value);
 }
