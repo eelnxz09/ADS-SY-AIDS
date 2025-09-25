@@ -248,7 +248,3 @@ void display() {
     }
     printf("NULL\n");
 }
-
-
-    printf("Value %d not found in the list.\n", value);
-}
