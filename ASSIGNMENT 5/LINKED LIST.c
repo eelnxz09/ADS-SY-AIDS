@@ -32,9 +32,7 @@ int main() {
         printf("6. Delete Last Node\n");
         printf("7. Delete from Position\n");
         printf("8. Display List\n");
-        printf("9. Reverse List\n");
-        printf("10. Search Node\n");
-        printf("11. Exit\n");
+        printf("9. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -64,12 +62,6 @@ int main() {
                 display();
                 break;
             case 9:
-                reverse();
-                break;
-            case 10:
-                search();
-                break;
-            case 11:
                 printf("Exiting...\n");
                 exit(0);
             default:
