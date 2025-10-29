@@ -5,7 +5,7 @@
 void enqueue();
 void dequeue();
 void display();
-
+//meow
 int queue[SIZE];
 int front = -1, rear = -1;
 
